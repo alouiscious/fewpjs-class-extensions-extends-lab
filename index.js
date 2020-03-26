@@ -24,10 +24,10 @@ class Triangle extends Polygon {
 
   get isValid() {
     if (!Array.isArray(this.arr) || this.countSides !== 3) return;
-    let sideA = this.arr[0]
-    let sideB = this.arr[1]
-    let sideC = this.arr[2]
-    return ((sideA + sideB > sideC) && (sideA + sideC > sideB) && (sideB + sideC > sideA))
+    // let sideA = this.arr[0]
+    // let sideB = this.arr[1]
+    // let sideC = this.arr[2]
+    return ((this.arr[0] + this.arr[1] > this.arr[2]) && (this.arr[0] + this.arr[2] > this.arr[1]) && (this.arr[1] + this.arr[2] > this.arr[0]))
      
   }
 }
